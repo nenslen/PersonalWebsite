@@ -1,0 +1,24 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+@mixin radial-gradient($color1, $color2) {
+	background: $color1;
+    background: -webkit-radial-gradient($color1, $color2);
+    background: -o-radial-gradient($color1, $color2);
+    background: -moz-radial-gradient($color1, $color2);
+    background: radial-gradient($color1, $color2);
+}
+
+
+$desktop: new-breakpoint(min-width 700px);
+
+
+$header-bg-color: #fff;
+$header-color: darken(#56A3DF, 10%);
+$border-color: #56A3DF;
+$text-color: #2a2a2a;
+$body-bg-color: #eee;//darken(#404040, 15%);
+$img-border-color: #FFFFFF;
+$a-color: #56A3DF;
+$current-page-color: #FFFFFF;
+$hr-color: #0f0f0f;
