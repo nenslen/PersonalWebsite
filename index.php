@@ -9,7 +9,7 @@
 	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css'>
 </head>
 <body>
-	<div id='home-head'>
+	<div id='header'>
 		<div id='titles'>
 			<h1 id='full-name'>Nicolas Enslen</h1>
 			<h4 id='titles'>Programmer, Web Developer</h4>
