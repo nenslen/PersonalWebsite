@@ -14,11 +14,13 @@ $desktop: new-breakpoint(min-width 700px);
 
 
 $header-bg-color: #fff;
-$header-color: darken(#56A3DF, 10%);
+$header-color: #EEE;
 $border-color: #56A3DF;
-$text-color: #2a2a2a;
-$body-bg-color: #eee;//darken(#404040, 15%);
+
+$bg-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/bg5.png');
+$bg-color: #111; // Backup
+
 $img-border-color: #FFFFFF;
+
+$text-color: #EEE;
 $a-color: #56A3DF;
-$current-page-color: #FFFFFF;
-$hr-color: #0f0f0f;
