@@ -9,11 +9,18 @@ ul, body {
 }
 
 body {
-	background-color: $body-bg-color;
-	color: #2a2a2a;
-	font-size: 110%;
+	background-color: $bg-color; // Backup
+	background-image: $bg-image;
+
+	@include media($desktop) {
+		font-size: 115%;
+	}
 }
 
+footer {
+	color: $text-color;
+	margin: 15px;
+}
 
 a {
 	text-decoration: none;
@@ -31,34 +38,37 @@ a:hover {
 	text-align: center;
 }
 
-
-
-
 .main-content {
-
 	margin-top: 200px;
 	margin-bottom: 100px;
 	color: $text-color;
 
 	h1 {
 		font-weight: bold;
-		font-size: 50px;
+		
 		font-family: Brandon, sans-serif;
-		//text-shadow: #d2d5db 0px 1px 1px;
 		text-transform: uppercase;
 		text-align: center;
 		letter-spacing: 2px;
+		text-shadow: #d2d5db 1px 1px 1px;
+	}
+
+	@include media($desktop) {
+		h1 {
+			font-size: 50px;
+		}
 	}
 }
 
-#home-head {
+
+
+#header {
 	display: block;
 	margin-top: 0;
 	padding-top: 0;
 	height: 50vh;
-
-	@include radial-gradient(#000, #060606);
-	color: white;
+	background-color: $header-bg-color;
+	color: black;
 
 	h1, h4 {
 		padding: 0;
@@ -68,7 +78,7 @@ a:hover {
 	}
 
 	h1 {
-		font-size: 500%;
+		font-size: 150%;
 		padding-top: 30vh;
 	}
 
@@ -78,6 +88,12 @@ a:hover {
 
 	#titles {
 		text-align: center;
+	}
+
+	@include media($desktop) {
+		h1 {
+			font-size: 500%;
+		}
 	}
 }
 
@@ -109,74 +125,72 @@ a:hover {
 #projects {
 
 	@include outer-container(100%);
-	max-width: 800px;
-
-
+	max-width: 1000px;
 
 	.cards {
-	  display: flex;
-	  flex-wrap: wrap;
-	  justify-content: space-between;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
 	.card {
-	  $base-border-color: gainsboro !default;
-	  $base-border-radius: 3px !default;
-	  $base-background-color: white !default;
-	  $base-spacing: 1.5em !default;
-	  $action-color: #477DCA !default;
-	  $dark-gray: #333 !default;
-	  $base-font-color: $dark-gray !default;
-	  $card-border-color: $base-border-color;
-	  $card-border: 1px solid $card-border-color;
-	  $card-background: lighten($card-border-color, 10%);
-	  $card-header-background: $card-background;
-	  $card-margin: 1em;
-	  $card-image-hover-opacity: 0.7;
-	  $card-image-hover-color: #F8F2B4;
+		$base-border-color: gainsboro !default;
+		$base-border-radius: 3px !default;
+		$base-background-color: white !default;
+		$base-spacing: 1.5em !default;
+		$action-color: #477DCA !default;
+		$dark-gray: #333 !default;
+		$base-font-color: $dark-gray !default;
+		$card-border-color: $base-border-color;
+		$card-border: 1px solid $card-border-color;
+		$card-background: lighten($card-border-color, 10%);
+		$card-header-background: $card-background;
+		$card-margin: 1em;
+		$card-image-hover-opacity: 0.7;
+		$card-image-hover-color: #F8F2B4;
 
-	  background-color: $card-background;
-	  border: $card-border;
-	  border-radius: $base-border-radius;
-	  box-shadow: 0 2px 4px darken($base-background-color, 10%);
-	  cursor: pointer;
-	  flex-basis: 15em;
-	  flex-grow: 1;
-	  margin: 1em $card-margin 0 $card-margin;
-	  position: relative;
-	  transition: all 0.2s ease-in-out;
+		background-color: $card-background;
+		border: $card-border;
+		border-radius: $base-border-radius;
+		box-shadow: 0 2px 4px darken($base-background-color, 10%);
+		cursor: pointer;
+		flex-basis: 15em;
+		flex-grow: 1;
+		margin: 1em $card-margin 0 $card-margin;
+		position: relative;
+		transition: all 0.2s ease-in-out;
 
-	  .card-image {
-	    background-color: black;
-	    overflow: hidden;
+		.card-image {
+			background-color: black;
+			overflow: hidden;
 
-	    img {
-	      @include border-top-radius($base-border-radius);
-	      opacity: 1;
-	      transition: all 0.2s ease-in-out;
-	      width: 100%;
-	    }
-	  }
+			img {
+				@include border-top-radius($base-border-radius);
+				opacity: 1;
+				transition: all 0.2s ease-in-out;
+				width: 100%;
+			}
+		}
 
-	  .card-header {
-	    background-color: $card-header-background;
-	    border-bottom: $card-border;
-	    border-radius: $base-border-radius $base-border-radius 0 0;
-	    font-weight: bold;
-	    line-height: 1.5em;
-	    padding: ($base-spacing / 3) ($base-spacing / 2);
-	    transition: all 0.2s ease-in-out;
-	  }
+		.card-header {
+			background-color: $card-header-background;
+			border-bottom: $card-border;
+			border-radius: $base-border-radius $base-border-radius 0 0;
+			font-weight: bold;
+			line-height: 1.5em;
+			padding: ($base-spacing / 3) ($base-spacing / 2);
+			transition: all 0.2s ease-in-out;
+		}
 
-	  .card-copy {
-	    font-size: 0.9em;
-	    line-height: 1.5em;
-	    padding: ($base-spacing / 2) ($base-spacing / 2);
+		.card-copy {
+			font-size: 0.9em;
+			line-height: 1.5em;
+			padding: ($base-spacing / 2) ($base-spacing / 2);
 
-	    p {
-	      margin: 0 0 ($base-spacing / 2);
-	    }
-	  }
+			p {
+				margin: 0 0 ($base-spacing / 2);
+			}
+		}
 	}
 
 
@@ -207,6 +221,45 @@ a:hover {
 		@include span-columns(12);
 		@include media($desktop) {
 			@include span-columns(6);
+		}
+	}
+}
+
+
+
+#knowledge {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+	.knowledge-square {
+		width: 80%;
+	    height: 50px;
+	    display: inline-block;
+	    vertical-align: top;
+		margin: 10px;
+	}
+
+	.knowledge-content {
+		font-size: 110%;
+		height: 100%;
+	    display: -webkit-flexbox;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    -webkit-flex-align: center;
+	    -ms-flex-align: center;
+	    -webkit-align-items: center;
+	    align-items: center;
+	    justify-content: center;
+	}
+
+	@include media($desktop) {
+		max-width: 800px;
+
+		.knowledge-square {
+			width: 100px;
+			height: 100px;
 		}
 	}
 }
@@ -247,45 +300,6 @@ a:hover {
 		@include span-columns(12);
 		@include media($desktop) {
 			@include span-columns(4);
-		}
-	}
-}
-
-
-
-#knowledge {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-
-	.knowledge-square {
-		width: 80%;
-	    height: 50px;
-	    display: inline-block;
-	    vertical-align: top;
-		margin: 10px;
-	}
-
-	.knowledge-content {
-		font-size: 110%;
-		height: 100%;
-	    display: -webkit-flexbox;
-	    display: -ms-flexbox;
-	    display: -webkit-flex;
-	    display: flex;
-	    -webkit-flex-align: center;
-	    -ms-flex-align: center;
-	    -webkit-align-items: center;
-	    align-items: center;
-	    justify-content: center;
-	}
-
-	@include media($desktop) {
-		max-width: 800px;
-
-		.knowledge-square {
-			width: 100px;
-			height: 100px;
 		}
 	}
 }
