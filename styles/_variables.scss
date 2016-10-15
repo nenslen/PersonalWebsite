@@ -9,16 +9,24 @@
     background: radial-gradient($color1, $color2);
 }
 
+// Fixes issues when moving between different sized columns when screen width changes
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
 
 $desktop: new-breakpoint(min-width 700px);
+$small-desktop: new-breakpoint(min-width 500px);
 
-
+ 
 $header-bg-color: #fff;
+$header-text-color: black;
 $header-color: #EEE;
 $border-color: #56A3DF;
 
-$bg-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/bg5.png');
 $bg-color: #111; // Backup
+$bg-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/bg.png');
 
 $img-border-color: #FFFFFF;
 
