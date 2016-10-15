@@ -50,22 +50,25 @@
 			</p>
 		</div>
 		
-		<div id='projects'>
-			<div class="cards">
 
-				<!-- Block Puzzle -->
-				<div class="card">
-					<div class="card-image">
-						<div class='video'>
-							<div class="video-wrapper">
-								<iframe width="420" height="315" src="https://www.youtube.com/embed/EL6INBXauik?autoplay=0" frameborder="0" allowfullscreen></iframe>
-							</div>
-						</div>
+		<div id="projects">
+
+			<!-- Block Puzzle -->
+			<div class="project">
+				<div class='project-video'>
+					<div class="project-media">
+						<iframe src="https://www.youtube.com/embed/EL6INBXauik?autoplay=0" frameborder="0" allowfullscreen></iframe> <!--width="420" height="315"-->
 					</div>
-					<div class="card-header">
-						Block Puzzle (Java)
-					</div>
-					<div class="card-copy">
+				</div>
+
+				<div class="project-title">
+					Block Puzzle (Java)
+				</div>
+
+				<input type="checkbox" class="read-more-state" id="item-1" />
+				<label for="item-1" class="read-more-trigger"></label>
+				<div class="read-more-wrap project-description">
+					<div class="read-more-target">
 						<p>In this game, you place blocks onto the grid. When a column or row is full, those
 						blocks disappear. This game is a recreation of a game on the Google Playstore called
 						'Block Puzzle'.</p>
@@ -73,9 +76,39 @@
 						<p><a href='https://github.com/nenslen/BlockPuzzle/releases/download/1.0/Block_Puzzle.jar'>Download .jar</a></p>
 					</div>
 				</div>
+			</div>
+			<!-- end Block Puzzle -->
 
 
-				<!-- Snake -->
+			<!-- Snake -->
+			<div class="project">
+				<div class="project-media">
+					<iframe src="https://www.youtube.com/embed/uENgQ7qtVaE?autoplay=0" frameborder="0" allowfullscreen></iframe> <!--width="420" height="315"-->
+				</div>
+
+				<div class="project-title">
+					Snake (Java)
+				</div>
+
+				<input type="checkbox" class="read-more-state" id="item-2" />
+				<label for="item-2" class="read-more-trigger"></label>
+				<div class="read-more-wrap project-description">
+					<div class="read-more-target">
+						<p>This is a recreation of the classic game 'Snake' with 3 game modes.</p>
+						<p><a href='https://github.com/nenslen/Snake' target='_blank'>Project on GitHub</a></p>
+					</div>
+				</div>
+			</div>
+			<!-- end Snake -->
+
+		</div>
+		<!--
+		<div id='projects'>
+			<div class="cards">
+				
+				
+				
+				<!-- Snake --
 				<div class="card">
 					<div class="card-image">
 						<div class='video'>
@@ -87,14 +120,19 @@
 					<div class="card-header">
 						Snake (Java)
 					</div>
-					<div class="card-copy">
-						<p>This is a recreation of the classic game 'Snake' with 3 game modes.</p>
-						<p><a href='https://github.com/nenslen/Snake' target='_blank'>Project on GitHub</a></p>
+					<input type="checkbox" class="read-more-state" id="item-2" />
+					<label for="item-2" class="read-more-trigger"></label>
+					<div class="read-more-wrap card-description">
+						<div class="read-more-target">
+							<div class="card-copy">
+								<p>This is a recreation of the classic game 'Snake' with 3 game modes.</p>
+								<p><a href='https://github.com/nenslen/Snake' target='_blank'>Project on GitHub</a></p>
+							</div>
+						</div>
 					</div>
 				</div>
 
-
-				<!-- Test -->
+				<!-- This Website --
 				<div class="card">
 					<div class="card-image">
 						<div class='video'>
@@ -106,17 +144,23 @@
 					<div class="card-header">
 						This website (HTML, CSS/SCSS)
 					</div>
-					<div class="card-copy">
-						<p>I created this website. Nothing fancy, just HTML and CSS/SCSS were used.</p>
-						<p><a href='https://github.com/nenslen/PersonalWebsite' target='_blank'>Project on GitHub</a></p>
+					<input type="checkbox" class="read-more-state" id="item-3" />
+					<label for="item-3" class="read-more-trigger"></label>
+					<div class="read-more-wrap card-description">
+						<div class="read-more-target">
+							<div class="card-copy">
+								<p>I created this website. Nothing fancy, just HTML and CSS/SCSS were used.</p>
+								<p><a href='https://github.com/nenslen/PersonalWebsite' target='_blank'>Project on GitHub</a></p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		-->
 
 
-
-		<!-- Knowledge Section -->
+		<!-- Knowledge -->
 		<div class='main-content' id='knowledge'>
 			<h1>Knowledge</h1>
 			
@@ -135,7 +179,7 @@
 		
 
 
-		<!-- Education Section -->
+		<!-- Education -->
 		<div class='main-content' id='education'>
 			<h1>Education</h1>
 			
@@ -153,7 +197,7 @@
 		
 		
 		
-		<!-- Contact Section -->
+		<!-- Contact -->
 		<div class='main-content' id='contact'>
 			<h1>Contact</h1>
 			
