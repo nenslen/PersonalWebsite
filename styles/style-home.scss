@@ -34,6 +34,7 @@ a:hover {
 .wrapper {
 	margin-left: auto;
 	margin-right: auto;
+	padding: 15px;
 	width: 100%;
 	text-align: center;
 }
@@ -45,7 +46,6 @@ a:hover {
 
 	h1 {
 		font-weight: bold;
-		
 		font-family: Brandon, sans-serif;
 		text-transform: uppercase;
 		text-align: center;
@@ -68,7 +68,7 @@ a:hover {
 	padding-top: 0;
 	height: 50vh;
 	background-color: $header-bg-color;
-	color: black;
+	color: $header-text-color;
 
 	h1, h4 {
 		padding: 0;
@@ -127,20 +127,32 @@ a:hover {
 	@include outer-container(100%);
 	max-width: 1000px;
 
-	.cards {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
+	.project {
 
-	.card {
+		@include span-columns(12);
+		
+		@include media($small-desktop) {
+			@include span-columns(6);
+			@include omega-reset(3n);
+			@include omega(2n);
+		}
+		
+		@include media($desktop) {
+			@include span-columns(4);
+			@include omega-reset(2n);
+			@include omega(3n);
+		}
+		
+
 		$base-border-color: gainsboro !default;
 		$base-border-radius: 3px !default;
 		$base-background-color: white !default;
 		$base-spacing: 1.5em !default;
+
 		$action-color: #477DCA !default;
 		$dark-gray: #333 !default;
 		$base-font-color: $dark-gray !default;
+
 		$card-border-color: $base-border-color;
 		$card-border: 1px solid $card-border-color;
 		$card-background: lighten($card-border-color, 10%);
@@ -153,26 +165,10 @@ a:hover {
 		border: $card-border;
 		border-radius: $base-border-radius;
 		box-shadow: 0 2px 4px darken($base-background-color, 10%);
-		cursor: pointer;
-		flex-basis: 15em;
-		flex-grow: 1;
-		margin: 1em $card-margin 0 $card-margin;
 		position: relative;
 		transition: all 0.2s ease-in-out;
 
-		.card-image {
-			background-color: black;
-			overflow: hidden;
-
-			img {
-				@include border-top-radius($base-border-radius);
-				opacity: 1;
-				transition: all 0.2s ease-in-out;
-				width: 100%;
-			}
-		}
-
-		.card-header {
+		.project-title {
 			background-color: $card-header-background;
 			border-bottom: $card-border;
 			border-radius: $base-border-radius $base-border-radius 0 0;
@@ -182,23 +178,16 @@ a:hover {
 			transition: all 0.2s ease-in-out;
 		}
 
-		.card-copy {
+		.project-description {
 			font-size: 0.9em;
 			line-height: 1.5em;
-			padding: ($base-spacing / 2) ($base-spacing / 2);
 
 			p {
-				margin: 0 0 ($base-spacing / 2);
+				margin: ($base-spacing / 2);
 			}
 		}
-	}
 
-
-	.video {
-		margin-left: auto;
-		margin-right: auto;
-		
-		.video-wrapper {
+		.project-media {
 			height: 0;
 			overflow: hidden;
 			padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
@@ -211,17 +200,18 @@ a:hover {
 				@include size(100%);
 			}
 		}
+		
 
-		@include media($desktop) {
-			max-width: 840px;
-		}
+		margin: 0;
+		//padding: 0;
+		margin-top: 20px;
 	}
 
+
+	
+
 	.project {
-		@include span-columns(12);
-		@include media($desktop) {
-			@include span-columns(6);
-		}
+		
 	}
 }
 
@@ -302,4 +292,58 @@ a:hover {
 			@include span-columns(4);
 		}
 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.read-more-state {
+  	display: none;
+}
+
+.read-more-target {
+	opacity: 0;
+	max-height: 0;
+	font-size: 0;
+	transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+	opacity: 1;
+	font-size: inherit;
+	max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  	content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  	content: 'Show less';
+}
+
+.read-more-trigger {
+	width: 100%;
+	cursor: pointer;
+	display: inline-block;
+	padding: 0 .5em;
+	font-size: .9em;
+	line-height: 2;
+	border: 1px solid #ddd;
+	border-radius: .25em;
+}
+
+.read-more-trigger:hover {
+	color: darken($text-color, 25%);
 }
