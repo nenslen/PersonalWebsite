@@ -57,7 +57,9 @@
 			<div class="project">
 				<div class='project-video'>
 					<div class="project-media">
-						<iframe src="https://www.youtube.com/embed/EL6INBXauik?autoplay=0" frameborder="0" allowfullscreen></iframe> <!--width="420" height="315"-->
+						<video controls autoplay loop muted>
+							<source src="videos/BlockPuzzleDemo.webm" type="video/webm">
+						</video>
 					</div>
 				</div>
 
@@ -70,8 +72,9 @@
 				<div class="read-more-wrap project-description">
 					<div class="read-more-target">
 						<p>In this game, you place blocks onto the grid. When a column or row is full, those
-						blocks disappear. This game is a recreation of a game on the Google Playstore called
+						blocks disappear. This game is a re-creation of a game on the Google Playstore called
 						'Block Puzzle'.</p>
+						<p><a href='https://www.youtube.com/watch?v=EL6INBXauik' target='_blank'>Full Demo on Youtube</a></p>
 						<p><a href='https://github.com/nenslen/BlockPuzzle' target='_blank'>Project on GitHub</a></p>
 						<p><a href='https://github.com/nenslen/BlockPuzzle/releases/download/1.0/Block_Puzzle.jar'>Download .jar</a></p>
 					</div>
@@ -83,7 +86,9 @@
 			<!-- Snake -->
 			<div class="project">
 				<div class="project-media">
-					<iframe src="https://www.youtube.com/embed/uENgQ7qtVaE?autoplay=0" frameborder="0" allowfullscreen></iframe> <!--width="420" height="315"-->
+					<video controls autoplay loop muted>
+						<source src="videos/SnakeDemo.webm" type="video/webm">
+					</video>
 				</div>
 
 				<div class="project-title">
@@ -94,70 +99,38 @@
 				<label for="item-2" class="read-more-trigger"></label>
 				<div class="read-more-wrap project-description">
 					<div class="read-more-target">
-						<p>This is a recreation of the classic game 'Snake' with 3 game modes.</p>
+						<p>This is a re-creation of the classic game 'Snake' with 3 game modes. The demo is showing the survival game mode, where the player's tail is always growing.</p>
+						<p><a href='https://www.youtube.com/watch?v=uENgQ7qtVaE' target='_blank'>Full Demo on Youtube</a></p>
 						<p><a href='https://github.com/nenslen/Snake' target='_blank'>Project on GitHub</a></p>
 					</div>
 				</div>
 			</div>
 			<!-- end Snake -->
 
-		</div>
-		<!--
-		<div id='projects'>
-			<div class="cards">
-				
-				
-				
-				<!-- Snake --
-				<div class="card">
-					<div class="card-image">
-						<div class='video'>
-							<div class="video-wrapper">
-								<iframe width="420" height="315" src="https://www.youtube.com/embed/uENgQ7qtVaE?autoplay=0" frameborder="0" allowfullscreen></iframe>
-							</div>
-						</div>
-					</div>
-					<div class="card-header">
-						Snake (Java)
-					</div>
-					<input type="checkbox" class="read-more-state" id="item-2" />
-					<label for="item-2" class="read-more-trigger"></label>
-					<div class="read-more-wrap card-description">
-						<div class="read-more-target">
-							<div class="card-copy">
-								<p>This is a recreation of the classic game 'Snake' with 3 game modes.</p>
-								<p><a href='https://github.com/nenslen/Snake' target='_blank'>Project on GitHub</a></p>
-							</div>
-						</div>
-					</div>
+
+			<!-- Personal Website -->
+			<div class="project">
+				<div class="project-media">
+					<img src="images/site.png"></img>
 				</div>
 
-				<!-- This Website --
-				<div class="card">
-					<div class="card-image">
-						<div class='video'>
-							<div class="video-wrapper">
-								<img src="images/site.png"></img>
-							</div>
-						</div>
-					</div>
-					<div class="card-header">
-						This website (HTML, CSS/SCSS)
-					</div>
-					<input type="checkbox" class="read-more-state" id="item-3" />
-					<label for="item-3" class="read-more-trigger"></label>
-					<div class="read-more-wrap card-description">
-						<div class="read-more-target">
-							<div class="card-copy">
-								<p>I created this website. Nothing fancy, just HTML and CSS/SCSS were used.</p>
-								<p><a href='https://github.com/nenslen/PersonalWebsite' target='_blank'>Project on GitHub</a></p>
-							</div>
-						</div>
+				<div class="project-title">
+					This website (HTML, CSS/SCSS)
+				</div>
+
+				<input type="checkbox" class="read-more-state" id="item-3" />
+				<label for="item-3" class="read-more-trigger"></label>
+				<div class="read-more-wrap project-description">
+					<div class="read-more-target">
+						<p>I created this website. Nothing fancy, just HTML and CSS/SCSS were used.</p>
+						<p><a href='https://github.com/nenslen/PersonalWebsite' target='_blank'>Project on GitHub</a></p>
 					</div>
 				</div>
 			</div>
+			<!-- end Personal Website -->
+
 		</div>
-		-->
+		
 
 
 		<!-- Knowledge -->
