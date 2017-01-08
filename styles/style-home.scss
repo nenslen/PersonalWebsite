@@ -303,7 +303,7 @@ a:hover {
 	background-color: #000000;
 	background-color:rgba(0, 0, 0, 0.5);
 	display: none;
-	padding-top: 100px;
+	//padding-top: 100px;
 }
 
 
@@ -314,17 +314,26 @@ a:hover {
 	display: inline-block;
 
 	-webkit-animation: animatezoom;
-	animation: animatezoom;
+	animation-name: animatezoom;
 	animation-duration: 0.45s;
 
 	img, video {
-		width: 100%;
+		// Responsive media
+		max-height: 90vh;
+		max-width: 100%;
+		width: auto;
+		height: auto;
 	}
 }
 
 @keyframes animatezoom {
 	from{transform:scale(0)} 
 	to{transform:scale(1)}
+}
+
+@keyframes animateshrink {
+	from{transform:scale(1)} 
+	to{transform:scale(0)}
 }
 
 
@@ -336,7 +345,7 @@ a:hover {
 	opacity: 0;
 	max-height: 0;
 	font-size: 0;
-	transition: .25s ease;
+	transition: .25s ease; 
 }
 
 .read-more-state:checked ~ .read-more-wrap .read-more-target {

@@ -230,10 +230,9 @@
 		</div>
 
 
-		<div id="modal" onclick="this.style.display='none'">
-			<div class="modal-content">
-				<img id="modal-media" src="media/papa.png">
-			</div>
+		<!--<div id="modal" onclick="this.style.display='none'">-->
+		<div id="modal">
+			<div class="modal-content"></div>
 		</div>
 
 

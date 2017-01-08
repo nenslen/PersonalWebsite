@@ -1,5 +1,10 @@
 $(document).ready(function(){
+
+	
     $(".project-media").click(function(){
+
+    	$(".modal-content").css('animation-name', 'animatezoom');
+
 
     	// Display media in modal
     	if(this.id.toLowerCase().includes('png') === true) {
@@ -14,5 +19,21 @@ $(document).ready(function(){
 
 
         $('#modal').css('display','block');
+    });
+
+
+
+    $("#modal").click(function() {
+
+    	// Shrink modal
+    	if($(".modal-content").css('animation').includes('animatezoom')) {
+    		$(".modal-content").css('animation-name', 'animateshrink');
+    	}
+
+    	// Close modal
+    	var mod = this;
+    	setTimeout(function() {
+    	  mod.style.display='none';
+    	}, 450);
     });
 });
