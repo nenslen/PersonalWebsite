@@ -291,44 +291,34 @@ a:hover {
 }
 
 
-
-
 #modal {
-	z-index: 3;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	outline: 0;
+	cursor: pointer;
+	background-color: #000000;
+	background-color:rgba(0, 0, 0, 0.5);
 	display: none;
 	padding-top: 100px;
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: #000000;
-	background-color:rgba(0, 0, 0, 0.7);
-	cursor: pointer;
 }
 
 
-.modal-content {
-	overflow: hidden;
-	padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
-	position: relative;
-	margin: auto;
-	width: 1400px;
-	max-width: 90%;
+.modal-content { 
+	max-width: 1200px;
+	margin: 30px;
+	outline: 0;
+	display: inline-block;
 
-	padding:0;
-	outline:0;
+	-webkit-animation: animatezoom;
+	animation: animatezoom;
+	animation-duration: 0.45s;
 
-	-webkit-animation: animatezoom 0.6s;
-	animation: animatezoom 0.6s;
-
-
-	embed,
-	object,
-	iframe {
-		@include position(absolute, 0 null null 0);
-		@include size(100%);
+	img, video {
+		width: 100%;
 	}
 }
 

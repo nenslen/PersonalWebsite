@@ -91,7 +91,7 @@
 						<p>In this game, you place blocks onto the grid. When a column or row is full, those
 						blocks disappear. This game is a re-creation of a game on the Google Playstore called
 						'Block Puzzle'.</p>
-						<p><a href='https://www.youtube.com/watch?v=EL6INBXauik' target='_blank'>Full Demo on Youtube</a></p>
+						<p><a href='https://www.youtube.com/watch?v=EL6INBXauik' target='_blank'>Full Video on Youtube</a></p>
 						<p><a href='https://github.com/nenslen/BlockPuzzle' target='_blank'>Project on GitHub</a></p>
 						<p><a href='https://github.com/nenslen/BlockPuzzle/releases/download/1.0/Block_Puzzle.jar'>Download .jar</a></p>
 					</div>
@@ -117,7 +117,7 @@
 				<div class="read-more-wrap project-description">
 					<div class="read-more-target">
 						<p>This is a re-creation of the classic game 'Snake' with 3 game modes. The demo is showing the survival game mode, where the player's tail is always growing.</p>
-						<p><a href='https://www.youtube.com/watch?v=uENgQ7qtVaE' target='_blank'>Full Demo on Youtube</a></p>
+						<p><a href='https://www.youtube.com/watch?v=uENgQ7qtVaE' target='_blank'>Full Video on Youtube</a></p>
 						<p><a href='https://github.com/nenslen/Snake' target='_blank'>Project on GitHub</a></p>
 					</div>
 				</div>
@@ -146,6 +146,28 @@
 			</div>
 			<!-- end Personal Website -->
 
+
+			<!-- Calculator -->
+			<div class="project">
+				<div class="project-media" id="calculator.png">
+					<img src="media/calculator.png"></img>
+				</div>
+
+				<div class="project-title">
+					Calculator (HTML, CSS/SCSS, JS)
+				</div>
+
+				<input type="checkbox" class="read-more-state" id="item-4" />
+				<label for="item-4" class="read-more-trigger"></label>
+				<div class="read-more-wrap project-description">
+					<div class="read-more-target">
+						<p>This is a calculator that I created for a project on freecodecamp.com</p>
+						<p><a href='https://codepen.io/NicEnslen/pen/BQPvmW/' target='_blank'>Code on Codepen</a></p>
+						<p><a href='https://codepen.io/NicEnslen/full/BQPvmW/' target='_blank'>Demo on Codepen</a></p>
+					</div>
+				</div>
+			</div>
+			<!-- end Personal Website -->
 		</div>
 		
 
@@ -207,11 +229,10 @@
 			</div>
 		</div>
 
-		<p style="width:30%;cursor:zoom-in" onclick="document.getElementById('modal01').style.display='block'">sdfsdf</p>
 
-		<div id="modal" class="modal22" onclick="this.style.display='none'">
-			<div class="modal-content w3-animate-zoom">
-				<img id="modal-media" src="media/papa.png" style="width:100%">
+		<div id="modal" onclick="this.style.display='none'">
+			<div class="modal-content">
+				<img id="modal-media" src="media/papa.png">
 			</div>
 		</div>
 
