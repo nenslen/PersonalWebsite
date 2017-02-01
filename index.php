@@ -2,14 +2,11 @@
 
 <html>
 <head>
-	<title>Nicolas Enslen</title>
+	<title>Nicolas Enslen - Programmer, Web Developer</title>
 	<meta charset='utf-8'>
-	<!--<meta name='viewport' content='width=device-width, initial-scale=1'>-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<link rel='stylesheet' href='styles/style-home.css'>
 	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css'>
-
-
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="script.js"></script>
@@ -167,7 +164,59 @@
 					</div>
 				</div>
 			</div>
-			<!-- end Personal Website -->
+			<!-- end Calculator -->
+
+
+
+			<!-- Othello -->
+			<div class="project">
+				<div class="project-media" id="othello.webm">
+					<video controls autoplay loop muted>
+						<source src="media/othello.webm" type="video/webm">
+					</video>
+				</div>
+
+				<div class="project-title">
+					Othello (C++)
+				</div>
+
+				<input type="checkbox" class="read-more-state" id="item-5" />
+				<label for="item-5" class="read-more-trigger"></label>
+				<div class="read-more-wrap project-description">
+					<div class="read-more-target">
+						<p>This is Othello. I made it for a project in one of my programming classes. In addtion to the full game, we had to include features
+						   that would allow the user to change the colors of the player pieces and board.</p>
+						<p><a href='https://www.youtube.com/watch?v=DcL2g_oJmbg' target='_blank'>Full Video on Youtube</a></p>
+						<p><a href='https://github.com/nenslen/Othello' target='_blank'>Project on GitHub</a></p>
+					</div>
+				</div>
+			</div>
+			<!-- end Othello -->
+
+
+
+			<!-- Computer Site -->
+			<div class="project">
+				<div class="project-media" id="computersite.png">
+					<img src="media/computersite.png"></img>
+				</div>
+
+				<div class="project-title">
+					UI Project (PHP, AngularJS, MySQL)
+				</div>
+
+				<input type="checkbox" class="read-more-state" id="item-6" />
+				<label for="item-6" class="read-more-trigger"></label>
+				<div class="read-more-wrap project-description">
+					<div class="read-more-target">
+						<p>This was a project for my User Interface class. The goal was to make a website that was obvious
+						   and easy to use. I used a very simple design to show some computer hardware information.</p>
+						<p><a href='https://github.com/nenslen/ComputerSite' target='_blank'>Project on GitHub</a></p>
+						<p><a href='http://nicolasenslen.com/ComputerSite/' target='_blank'>Demo</a></p>
+					</div>
+				</div>
+			</div>
+			<!-- end Computer Site -->
 		</div>
 		
 

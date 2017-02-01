@@ -125,7 +125,7 @@ a:hover {
 #projects {
 
 	@include outer-container(100%);
-	max-width: 1000px;
+	max-width: 1300px;
 
 	.project {
 
@@ -172,6 +172,7 @@ a:hover {
 		.project-title {
 			background-color: $card-header-background;
 			border-bottom: $card-border;
+			border-top: $card-border;
 			border-radius: $base-border-radius $base-border-radius 0 0;
 			font-weight: bold;
 			line-height: 1.5em;
@@ -189,14 +190,13 @@ a:hover {
 		}
 
 		.project-media {
-			height: 0;
+			height: 0; 
 			overflow: hidden;
 			padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
 			position: relative;
 			margin-right: 10px;
 			margin-left: 10px;
-			background-color: black;
-			cursor:zoom-in;
+			cursor: zoom-in;
 
 			embed, object, iframe, video {
 				@include position(absolute, 0 null null 0);
