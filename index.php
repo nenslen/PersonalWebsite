@@ -160,7 +160,7 @@
 					<div class="read-more-target">
 						<p>This is a calculator that I created for a project on freecodecamp.com</p>
 						<p><a href='https://codepen.io/NicEnslen/pen/BQPvmW/' target='_blank'>Code on Codepen</a></p>
-						<p><a href='https://codepen.io/NicEnslen/full/BQPvmW/' target='_blank'>Demo on Codepen</a></p>
+						<p><a href='https://codepen.io/NicEnslen/full/BQPvmW/' target='_blank'>Demo</a></p>
 					</div>
 				</div>
 			</div>
