@@ -39,6 +39,19 @@ a:hover {
 	text-align: center;
 }
 
+
+p {
+	text-align: center;
+}
+
+
+.text-align-left * {
+	//p {
+		text-align: left;
+	//}
+}
+
+
 .main-content {
 	margin-top: 200px;
 	margin-bottom: 100px;
@@ -121,98 +134,6 @@ a:hover {
 }
 
 
-
-#projects {
-
-	@include outer-container(100%);
-	max-width: 1300px;
-
-	.project {
-
-		@include span-columns(12);
-		
-		@include media($small-desktop) {
-			@include span-columns(6);
-			@include omega-reset(3n);
-			@include omega(2n);
-		}
-		
-		@include media($desktop) {
-			@include span-columns(4);
-			@include omega-reset(2n);
-			@include omega(3n);
-		}
-		
-
-		$base-border-color: gainsboro !default;
-		$base-border-radius: 3px !default;
-		$base-background-color: white !default;
-		$base-spacing: 1.5em !default;
-
-		$action-color: #477DCA !default;
-		$dark-gray: #333 !default;
-		$base-font-color: $dark-gray !default;
-
-		$card-border-color: $base-border-color;
-		$card-border: 1px solid $card-border-color;
-		$card-background: lighten($card-border-color, 10%);
-		$card-header-background: $card-background;
-		$card-margin: 1em;
-		$card-image-hover-opacity: 0.7;
-		$card-image-hover-color: #F8F2B4;
-
-		background-color: $card-background;
-		border: $card-border;
-		border-radius: $base-border-radius;
-		box-shadow: 0 2px 4px darken($base-background-color, 10%);
-		position: relative;
-		transition: all 0.2s ease-in-out;
-		margin-top: 20px;
-
-		.project-title {
-			background-color: $card-header-background;
-			border-bottom: $card-border;
-			border-top: $card-border;
-			border-radius: $base-border-radius $base-border-radius 0 0;
-			font-weight: bold;
-			line-height: 1.5em;
-			padding: ($base-spacing / 3) ($base-spacing / 2);
-			transition: all 0.2s ease-in-out;
-		}
-
-		.project-description {
-			font-size: 0.9em;
-			line-height: 1.5em;
-
-			p {
-				margin: ($base-spacing / 2);
-			}
-		}
-
-		.project-media {
-			height: 0; 
-			overflow: hidden;
-			padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
-			position: relative;
-			margin-right: 10px;
-			margin-left: 10px;
-			cursor: zoom-in;
-
-			embed, object, iframe, video {
-				@include position(absolute, 0 null null 0);
-				@include size(100%);
-			}
-
-			img {
-				max-width: 100%;
-    			height: auto;
-			}
-		}
-	}
-}
-
-
-
 #knowledge {
 	width: 100%;
 	margin-left: auto;
@@ -252,24 +173,6 @@ a:hover {
 
 
 
-#education {
-	@include outer-container(100%);
-	max-width: 800px;
-
-	.education-header {
-		font-size: 135%;
-	}
-
-	.education-content {
-		@include span-columns(12);
-		@include media($desktop) {
-			@include span-columns(6);
-		}
-	}
-}
-
-
-
 #contact {
 	@include outer-container(100%);
 	max-width: 800px;
@@ -291,6 +194,7 @@ a:hover {
 }
 
 
+
 #modal {
 	position: fixed;
 	top: 0;
@@ -303,7 +207,6 @@ a:hover {
 	background-color: #000000;
 	background-color:rgba(0, 0, 0, 0.5);
 	display: none;
-	//padding-top: 100px;
 }
 
 
@@ -375,4 +278,115 @@ a:hover {
 
 .read-more-trigger:hover {
 	color: darken($text-color, 25%);
+}
+
+
+
+.cards {
+	display: grid;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	grid-template-columns: repeat(1, 1fr);
+
+	@include media($small-desktop) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	
+	@include media($desktop) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+#projects {
+	max-width: 1300px;
+
+	@include media($small-desktop) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	@include media($desktop) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+
+#schools {
+	max-width: 1000px;
+
+	@include media($small-desktop) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	
+	@include media($desktop) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.card {
+	$base-border-color: gainsboro !default;
+	$base-border-radius: 3px !default;
+	$base-background-color: white !default;
+	$base-spacing: 1.5em !default;
+
+	$action-color: #477DCA !default;
+	$dark-gray: #333 !default;
+	$base-font-color: $dark-gray !default;
+
+	$card-border-color: $base-border-color;
+	$card-border: 1px solid $card-border-color;
+	$card-background: lighten($card-border-color, 10%);
+	$card-header-background: $card-background;
+	$card-margin: 1em;
+	$card-image-hover-opacity: 0.7;
+	$card-image-hover-color: #F8F2B4;
+
+	background-color: $card-background;
+	border: $card-border;
+	border-radius: $base-border-radius;
+	box-shadow: 0 2px 4px darken($base-background-color, 10%);
+	transition: all 0.2s ease-in-out;
+	height: auto;
+
+	.card-title {
+		background-color: $card-header-background;
+		border-bottom: $card-border;
+		border-top: $card-border;
+		border-radius: $base-border-radius $base-border-radius 0 0;
+		font-weight: bold;
+		line-height: 1.5em;
+		padding: ($base-spacing / 3) ($base-spacing / 2);
+		transition: all 0.2s ease-in-out;
+	}
+
+	.card-description {
+		font-size: 0.9em;
+		line-height: 1.5em;
+
+		p {
+			margin: ($base-spacing / 2);
+		}
+	}
+
+	.card-media {
+		height: 0; 
+		overflow: hidden;
+		padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
+		position: relative;
+		margin-right: 10px;
+		margin-left: 10px;
+		cursor: zoom-in;
+
+		embed, object, iframe, video, img {
+			@include position(absolute, 0 null null 0);
+			@include size(100%);
+			object-fit: contain;
+		}
+	}
+
+	.no-zoom {
+		cursor: default;
+	}
 }
