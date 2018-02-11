@@ -1,7 +1,12 @@
 $(document).ready(function(){
 
 	
-    $(".project-media").click(function(){
+    $(".card-media").click(function(){
+
+        // Don't zoom images with a no-zoom class
+        if($(this).hasClass('no-zoom')) {
+            return;
+        }
 
     	$(".modal-content").css('animation-name', 'animatezoom');
 
