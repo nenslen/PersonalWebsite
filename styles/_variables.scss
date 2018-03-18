@@ -16,19 +16,26 @@
 }
 
 
+// Responsive breakpoints
 $desktop: new-breakpoint(min-width 700px);
 $small-desktop: new-breakpoint(min-width 500px);
 
- 
-$header-bg-color: #fff;
-$header-text-color: black;
-$header-color: #EEE;
-$border-color: #56A3DF;
+// Background
+$bg-color: #111111; // Backup
+$bg-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/bg.png');
 
-$bg-color: #111; // Backup
-$bg-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../media/bg.png');
+// Page header
+$header-bg-color: #FFFFFF;
+$header-text-color: #000000;
 
-$img-border-color: #FFFFFF;
+// Text and links
+$text-color: #EEEEEE;
+$link-color: #56A3DF;
 
-$text-color: #EEE;
-$a-color: #56A3DF;
+// Cards
+$card-base-color: gainsboro;
+$card-bg-color: lighten($card-base-color, 10%);
+$card-text-color: #111111;
+$card-border-color: $card-base-color;
+$card-border-radius: 3px;
+$card-spacing: 1.5em;
