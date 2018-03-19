@@ -46,10 +46,10 @@
 			<div class="section" id="about">
 				<h1 class="section-header" id="about-header">About</h1>
 				<div class="section-content grid grid-2" id="about-content">
-					<div class='about-image'>
-						<img src='media/self-image.jpg' height='200px' width='200' />
+					<div id='about-image'>
+						<img src='media/self-image.jpg' />
 					</div>
-					<div class='about-description'>
+					<div id='about-description'>
 						<p class="text-align-left">I love programming! Making cool websites, applications, and games is fun, and it's what I like to do.</p>
 						<p class="text-align-left">I'm currently in my final semester of computer science at the University of Lethbridge.</p>
 					</div>
@@ -60,11 +60,11 @@
 
 
 		<!-- Projects -->
-		<div class='section-wrapper'>
+		<div class='section-wrapper' id="projects-wrapper">
 			<div class="section" id="projects">
 				<h1 class="section-header" id="projects-header">Projects</h1>
 				<div class="section-content" id="projects-content">
-					<p>This is a sample of some of my favorite projects that I've made. You can see a larger list of my projects on <a href='https://github.com/nenslen' target='_blank'>GitHub</a>.</p>
+					<p id="projects-description">This is a sample of some of my favorite projects that I've made. You can see a larger list of my projects on <a href='https://github.com/nenslen' target='_blank'>GitHub</a>.</p>
 		
 					<div class="grid grid-3">
 
@@ -328,7 +328,7 @@
 					<div class="grid grid-2">
 
 						<!-- Lethbridge College -->
-						<div class="card-outer">
+						<div class="card-outer equal-height">
 							<div class="card">
 								<div class="card-media no-zoom">
 									<img src="media/college-icon.png"></img>
@@ -341,7 +341,7 @@
 						</div><!-- End Lethbridge College -->
 						
 						<!-- University of Lethbridge -->
-						<div class="card-outer">
+						<div class="card-outer equal-height">
 							<div class="card">
 								<div class="card-media no-zoom">
 									<img src="media/university-icon.png"></img>
