@@ -3,6 +3,8 @@
 <html>
 <head>
 	<?php drawHead('Nicolas Enslen - Programmer, Web Developer', ''); ?>
+	<meta name="description" content="I love programming! Making cool websites, applications, and games is fun, and it's what I like to do. I'm currently in my final semester of computer science at the University of Lethbridge.">
+
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<script src='js/home.js'></script>
 </head>
@@ -53,17 +55,14 @@
 								</div>
 
 								<div class="card-title">
-									Digit Recognition (NodeJS/HTML/CSS/JS)
+									Digit Recognition (JS)
 								</div>
 
 								<input type="checkbox" class="read-more-state" id="item-1" />
 								<label for="item-1" class="read-more-trigger"></label>
 								<div class="read-more-wrap card-description">
 									<div class="read-more-target">
-										<p class="text-align-left">A neural network made from scratch that can recognize handwritten digits. It was made as a final project
-										for my data mining class at university. This was my most difficult, but most rewarding project
-										that I have undertaken so far! I had a lot of fun getting introduced to the topic of artificial
-										intelligence while working on it!</p>
+										<p class="text-align-left">A neural network made from scratch that can recognize handwritten digits. This is my most difficult, but most rewarding project that I have undertaken so far! I had a lot of fun getting introduced to the topic of artificial intelligence while working on it!</p>
 										<!--<p><a href='' target='_blank'>Full Video on Youtube</a></p>-->
 										<p class="text-align-left"><a href='https://github.com/nenslen/digit-recognition' target='_blank'>Project on GitHub</a></p>
 										<p class="text-align-left"><a href='projects/demos/digit-recognition/'>Demo</a></p>
@@ -92,9 +91,7 @@
 								<label for="item-2" class="read-more-trigger"></label>
 								<div class="read-more-wrap card-description">
 									<div class="read-more-target">
-										<p class="text-align-left">In this game, you place blocks onto the grid. When a column or row is full, those
-										blocks disappear. This game is a re-creation of a game on the Google Playstore called
-										'Block Puzzle'.</p>
+										<p class="text-align-left">This game is a re-creation of a game on the Google Playstore called 'Block Puzzle'. You place blocks onto the grid, and when a column or row is full, those blocks disappear. While making this game I learned more about how java handles dynamic layouts and events. I'm also currently making an online multiplayer version of this game that uses a NodeJS server to host the lobbies.</p>
 										<p class="text-align-left"><a href='https://www.youtube.com/watch?v=EL6INBXauik' target='_blank'>Full Video on Youtube</a></p>
 										<p class="text-align-left"><a href='https://github.com/nenslen/BlockPuzzle' target='_blank'>Project on GitHub</a></p>
 										<p class="text-align-left"><a href='https://github.com/nenslen/BlockPuzzle/releases/download/1.0/Block_Puzzle.jar'>Download .jar</a></p>
@@ -115,14 +112,14 @@
 								</div>
 
 								<div class="card-title">
-									Connect 4 AI (HTML/SCSS/JS)
+									Connect 4 AI (JS)
 								</div>
 
 								<input type="checkbox" class="read-more-state" id="item-9" />
 								<label for="item-9" class="read-more-trigger"></label>
 								<div class="read-more-wrap card-description">
 									<div class="read-more-target">
-										<p class="text-align-left">Connect Four, featuring an AI opponent that uses some neat methods to play. This project started as an assignment question for a university class and quickly became one of my favorite projects so far! While working on this project I gained a much deeper understanding of how to define a problem precisely and solve it using smart search algorithms.
+										<p class="text-align-left">Connect Four, featuring an AI opponent that uses some neat methods to play. This project started as an assignment question for a university class and quickly became one of my favorite projects so far! While working on this project I gained a much deeper understanding of how to precisely define a problem and then solve it using smart search algorithms.
 										<p class="text-align-left"><a href='https://github.com/nenslen/connect-four' target='_blank'>Project on GitHub</a></p>
 										<p class="text-align-left"><a href='projects/demos/connect-four/'>Demo</a></p>
 									</div>
@@ -150,7 +147,7 @@
 								<label for="item-3" class="read-more-trigger"></label>
 								<div class="read-more-wrap card-description">
 									<div class="read-more-target">
-										<p class="text-align-left">This is a re-creation of the classic game 'Snake' with 3 game modes. The demo is showing the survival game mode, where the player's tail is always growing.</p>
+										<p class="text-align-left">This is a re-creation of the classic game Snake. While making this game, I became much better at dealing with grids and applying user-defined settings (speed, size, wrap, etc.) to the game. I've also started working on an AI that controls the snake using some interesting search methods, and will update the project once finished.</p>
 										<p class="text-align-left"><a href='https://www.youtube.com/watch?v=uENgQ7qtVaE' target='_blank'>Full Video on Youtube</a></p>
 										<p class="text-align-left"><a href='https://github.com/nenslen/Snake' target='_blank'>Project on GitHub</a></p>
 									</div>
@@ -169,14 +166,14 @@
 								</div>
 
 								<div class="card-title">
-									This website (HTML, CSS/SCSS)
+									This Website (PHP, JS, SCSS)
 								</div>
 
 								<input type="checkbox" class="read-more-state" id="item-4" />
 								<label for="item-4" class="read-more-trigger"></label>
 								<div class="read-more-wrap card-description">
 									<div class="read-more-target">
-										<p class="text-align-left">I created this website. Nothing fancy, just HTML and CSS/SCSS were used.</p>
+										<p class="text-align-left">This website has seen many improvements since I started working on it over 2 years ago. The thing I enjoyed most while creating this website was how to make everything responsive. It's really satisfying to see the elements adapt to different screen sizes!</p>
 										<p class="text-align-left"><a href='https://github.com/nenslen/PersonalWebsite' target='_blank'>Project on GitHub</a></p>
 									</div>
 								</div>
@@ -194,14 +191,14 @@
 								</div>
 
 								<div class="card-title">
-									Calculator (Javascript)
+									Calculator (JS)
 								</div>
 
 								<input type="checkbox" class="read-more-state" id="item-5" />
 								<label for="item-5" class="read-more-trigger"></label>
 								<div class="read-more-wrap card-description">
 									<div class="read-more-target">
-										<p class="text-align-left">This is a calculator that I created for a project on freecodecamp.com</p>
+										<p class="text-align-left">This is a calculator that I created for a project on freecodecamp.com. It's fairly basic as far as calculators go, but I found some of the operation chaining to be pretty cool!</p>
 										<p class="text-align-left"><a href='https://codepen.io/NicEnslen/pen/BQPvmW/' target='_blank'>Code on Codepen</a></p>
 										<p class="text-align-left"><a href='https://codepen.io/NicEnslen/full/BQPvmW/' target='_blank'>Demo</a></p>
 									</div>
@@ -249,15 +246,14 @@
 								</div>
 
 								<div class="card-title">
-									UI Project (PHP, AngularJS, MySQL)
+									Database (PHP, Angular, MySQL)
 								</div>
 
 								<input type="checkbox" class="read-more-state" id="item-7" />
 								<label for="item-7" class="read-more-trigger"></label>
 								<div class="read-more-wrap card-description">
 									<div class="read-more-target">
-										<p class="text-align-left">This was a project for my User Interface class. The goal was to make a website that was obvious
-										   and easy to use. I used a very simple design to show some computer hardware information.</p>
+										<p class="text-align-left">This was a project for a class in college. It feels a little dated now compared to other projects I've made since this one, but I learned a lot about PHP, Angular, and MySQL. The main goal was to use PHP to interface with MySQL, then use Angular to display the data.</p>
 										<p class="text-align-left"><a href='https://github.com/nenslen/computer-site' target='_blank'>Project on GitHub</a></p>
 										<p class="text-align-left"><a href='projects/demos/computer-site/'>Demo</a></p>
 									</div>
@@ -278,15 +274,14 @@
 								</div>
 
 								<div class="card-title">
-									Ultimate Tic Tac Toe (Javascript)
+									Ultimate Tic Tac Toe (JS)
 								</div>
 
 								<input type="checkbox" class="read-more-state" id="item-8" />
 								<label for="item-8" class="read-more-trigger"></label>
 								<div class="read-more-wrap card-description">
 									<div class="read-more-target">
-										<p class="text-align-left">Players must play the board that corresponds to the square from the previous player. If the next move 
-										is to a board that has already been won, then that player may choose any board for their turn.</p>
+										<p class="text-align-left">It's like regular tic tac toe, but in order to win you need to win 3 small games in a row. While working on this project I learned more about jQuery and how to handle inputs from 81 different elements.</p>
 										<p class="text-align-left"><a href='https://youtu.be/6TgGcMFGhXo' target='_blank'>Full Video on Youtube</a></p>
 										<p class="text-align-left"><a href='https://github.com/nenslen/ultimate-tic-tac-toe' target='_blank'>Project on GitHub</a></p>
 										<p class="text-align-left"><a href='projects/demos/ultimate-tic-tac-toe/'>Demo</a></p>
