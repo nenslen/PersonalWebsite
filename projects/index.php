@@ -1,1 +1,11 @@
-This is the projects page. It will list all the projects, and highlight which ones have demos
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		window.location.href = 'nicolasenslen.com';
+	</script>
+</head>
+<body>
+
+</body>
+</html>

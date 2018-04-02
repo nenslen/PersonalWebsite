@@ -65,7 +65,7 @@
 										that I have undertaken so far! I had a lot of fun getting introduced to the topic of artificial
 										intelligence while working on it!</p>
 										<!--<p><a href='' target='_blank'>Full Video on Youtube</a></p>-->
-										<p class="text-align-left"><a href='https://github.com/nenslen/NeuralNetMNIST' target='_blank'>Project on GitHub</a></p>
+										<p class="text-align-left"><a href='https://github.com/nenslen/digit-recognition' target='_blank'>Project on GitHub</a></p>
 										<p class="text-align-left"><a href='projects/demos/digit-recognition/'>Demo</a></p>
 									</div>
 								</div>
@@ -123,7 +123,7 @@
 								<div class="read-more-wrap card-description">
 									<div class="read-more-target">
 										<p class="text-align-left">Connect Four, featuring an AI opponent that uses some neat methods to play. This project started as an assignment question for a university class and quickly became one of my favorite projects so far! While working on this project I gained a much deeper understanding of how to define a problem precisely and solve it using smart search algorithms.
-										<p class="text-align-left"><a href='https://github.com/nenslen/Connect4' target='_blank'>Project on GitHub</a></p>
+										<p class="text-align-left"><a href='https://github.com/nenslen/connect-four' target='_blank'>Project on GitHub</a></p>
 										<p class="text-align-left"><a href='projects/demos/connect-four/'>Demo</a></p>
 									</div>
 								</div>
@@ -258,7 +258,7 @@
 									<div class="read-more-target">
 										<p class="text-align-left">This was a project for my User Interface class. The goal was to make a website that was obvious
 										   and easy to use. I used a very simple design to show some computer hardware information.</p>
-										<p class="text-align-left"><a href='https://github.com/nenslen/ComputerSite' target='_blank'>Project on GitHub</a></p>
+										<p class="text-align-left"><a href='https://github.com/nenslen/computer-site' target='_blank'>Project on GitHub</a></p>
 										<p class="text-align-left"><a href='projects/demos/computer-site/'>Demo</a></p>
 									</div>
 								</div>
@@ -288,7 +288,7 @@
 										<p class="text-align-left">Players must play the board that corresponds to the square from the previous player. If the next move 
 										is to a board that has already been won, then that player may choose any board for their turn.</p>
 										<p class="text-align-left"><a href='https://youtu.be/6TgGcMFGhXo' target='_blank'>Full Video on Youtube</a></p>
-										<p class="text-align-left"><a href='https://github.com/nenslen/UltimateTicTacToe' target='_blank'>Project on GitHub</a></p>
+										<p class="text-align-left"><a href='https://github.com/nenslen/ultimate-tic-tac-toe' target='_blank'>Project on GitHub</a></p>
 										<p class="text-align-left"><a href='projects/demos/ultimate-tic-tac-toe/'>Demo</a></p>
 									</div>
 								</div>
