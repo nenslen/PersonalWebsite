@@ -1,57 +1,32 @@
 <!DOCTYPE html>
-
+<?php require 'functions.php'; ?>
 <html>
 <head>
-	<title>Nicolas Enslen - Programmer, Web Developer</title>
-	<meta charset='utf-8'>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<link rel='stylesheet' href='styles/style-home.css'>
-	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css'>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="modalScript.js"></script>
-
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-86102408-1', 'auto');
-		ga('send', 'pageview');
-
-	</script>
+	<?php drawHead('Nicolas Enslen - Programmer, Web Developer', ''); ?>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<script src='js/home.js'></script>
 </head>
 <body>
-	<div id='header'>
-		<div id='titles'>
-			<h1 id='full-name'>Nicolas Enslen</h1>
-			<h4 id='titles'>Programmer, Web Developer</h4>
-		</div>
-	</div>
-	<!--
-	<div id='top-right'>
-		<a href='mailto:nicolas.enslen@gmail.com'><i class='fa fa-envelope fa-3x' aria-hidden='true'></i></a>
-		<a href='https://github.com/nenslen' target='_blank'><i class='fa fa-github fa-3x' aria-hidden='true'></i></a>
-		<a href='https://ca.linkedin.com/in/nicolas-enslen-8a3b7b119' target='_blank'><i class='fa fa-linkedin fa-3x' aria-hidden='true'></i></a>
-		</br></br>
-	</div>
-	-->
+	<?php drawHeader('large'); ?>
 	
-
+	
 	<div class='wrapper'>
 		
 		<!-- About -->
 		<div class='section-wrapper'>
 			<div class="section" id="about">
 				<h1 class="section-header" id="about-header">About</h1>
-				<div class="section-content grid grid-2" id="about-content">
-					<div id='about-image'>
-						<img src='media/self-image.jpg' />
+				<div class="section-content grid grid-2-2-1" id="about-content">
+					<div id="about-image-outer">
+						<div id='about-image'>
+							<img src='media/self-image.jpg' />
+						</div>
 					</div>
 					<div id='about-description'>
-						<p class="text-align-left">I love programming! Making cool websites, applications, and games is fun, and it's what I like to do.</p>
-						<p class="text-align-left">I'm currently in my final semester of computer science at the University of Lethbridge.</p>
+						<div id="about-description-inner">
+							<p class="text-align-left">I love programming! Making cool websites, applications, and games is fun, and it's what I like to do.</p>
+							<p class="text-align-left">I'm currently in my final semester of computer science at the University of Lethbridge.</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -66,7 +41,7 @@
 				<div class="section-content" id="projects-content">
 					<p id="projects-description">This is a sample of some of my favorite projects that I've made. You can see a larger list of my projects on <a href='https://github.com/nenslen' target='_blank'>GitHub</a>.</p>
 		
-					<div class="grid grid-3">
+					<div class="grid grid-3-2-1">
 
 						<!-- Neural Network -->
 						<div class="card-outer">
@@ -91,7 +66,7 @@
 										intelligence while working on it!</p>
 										<!--<p><a href='' target='_blank'>Full Video on Youtube</a></p>-->
 										<p class="text-align-left"><a href='https://github.com/nenslen/NeuralNetMNIST' target='_blank'>Project on GitHub</a></p>
-										<p class="text-align-left"><a href='http://nicolasenslen.com/NeuralNetwork/' target='_blank'>Demo</a></p>
+										<p class="text-align-left"><a href='projects/demos/digit-recognition/'>Demo</a></p>
 									</div>
 								</div>
 							</div>
@@ -128,6 +103,33 @@
 							</div>
 						</div>
 						<!-- end Block Puzzle -->
+
+
+						<!-- Connect Four -->
+						<div class="card-outer">
+							<div class="card">
+								<div class="card-media" id="connect-four.webm">
+									<video controls autoplay loop muted>
+										<source src="media/connect-four.webm" type="video/webm">
+									</video>
+								</div>
+
+								<div class="card-title">
+									Connect 4 AI (HTML/SCSS/JS)
+								</div>
+
+								<input type="checkbox" class="read-more-state" id="item-9" />
+								<label for="item-9" class="read-more-trigger"></label>
+								<div class="read-more-wrap card-description">
+									<div class="read-more-target">
+										<p class="text-align-left">Connect Four, featuring an AI opponent that uses some neat methods to play. This project started as an assignment question for a university class and quickly became one of my favorite projects so far! While working on this project I gained a much deeper understanding of how to define a problem precisely and solve it using smart search algorithms.
+										<p class="text-align-left"><a href='https://github.com/nenslen/Connect4' target='_blank'>Project on GitHub</a></p>
+										<p class="text-align-left"><a href='projects/demos/connect-four/'>Demo</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end Neural Network -->
 
 
 
@@ -257,7 +259,7 @@
 										<p class="text-align-left">This was a project for my User Interface class. The goal was to make a website that was obvious
 										   and easy to use. I used a very simple design to show some computer hardware information.</p>
 										<p class="text-align-left"><a href='https://github.com/nenslen/ComputerSite' target='_blank'>Project on GitHub</a></p>
-										<p class="text-align-left"><a href='http://nicolasenslen.com/ComputerSite/' target='_blank'>Demo</a></p>
+										<p class="text-align-left"><a href='projects/demos/computer-site/'>Demo</a></p>
 									</div>
 								</div>
 							</div>
@@ -287,7 +289,7 @@
 										is to a board that has already been won, then that player may choose any board for their turn.</p>
 										<p class="text-align-left"><a href='https://youtu.be/6TgGcMFGhXo' target='_blank'>Full Video on Youtube</a></p>
 										<p class="text-align-left"><a href='https://github.com/nenslen/UltimateTicTacToe' target='_blank'>Project on GitHub</a></p>
-										<p class="text-align-left"><a href='http://nicolasenslen.com/UltimateTicTacToe/' target='_blank'>Demo</a></p>
+										<p class="text-align-left"><a href='projects/demos/ultimate-tic-tac-toe/'>Demo</a></p>
 									</div>
 								</div>
 							</div>
@@ -325,7 +327,7 @@
 				<h1 class="section-header" id="education-header">Education</h1>
 				<div class="section-content" id="education-content">
 		
-					<div class="grid grid-2">
+					<div class="grid grid-2-2-1">
 
 						<!-- Lethbridge College -->
 						<div class="card-outer equal-height">
@@ -365,7 +367,7 @@
 				<h1 class="section-header" id="contact-header">Contact</h1>
 				<div class="section-content" id="contact-content">
 			
-					<div class="grid grid-3">
+					<div class="grid grid-3-3-1">
 						<div>
 							<a href='mailto:nicolas.enslen@gmail.com'><i class='fa fa-envelope fa-5x' aria-hidden='true'></i></a>
 							<p><a href='mailto:nicolas.enslen@gmail.com'>nicolas.enslen@gmail.com</a></p>
@@ -386,16 +388,9 @@
 		</div><!-- End Contact -->
 		
 
+		<?php drawModal(); ?>
+		<?php drawFooter(); ?>
 
-		<div id="modal">
-			<div class="modal-content"></div>
-		</div>
-
-
-
-		<footer>
-			&copy 2018 - Nic Enslen
-		</footer>
 	</div><!-- wrapper -->
 </body>
 </html>

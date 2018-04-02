@@ -23,7 +23,7 @@ $(document).ready(function(){
     	}
 
 
-        $('#modal').css('display','block');
+        $('#modal').css('display','flex');
     });
 
 
