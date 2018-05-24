@@ -666,5 +666,6 @@ strong{ font-weight: bold;}
 .button-purple{ @include buttonize(249, 34, 73);}
 .button-orange{ @include buttonize(26, 77, 96);}
 .button-red{ @include buttonize(4, 58, 93);}
-.button-yellow{ @include buttonize(49, 54, 99, 1);}
+//.button-yellow{ @include buttonize(49, 54, 99, 1);}
+.button-yellow{ @include buttonize(49, 65, 95);}
 .button .fa{ float: left; font-size: 14px; line-height: 20px; margin: -1px 8px 0 -4px; vertical-align: top;}
