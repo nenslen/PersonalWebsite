@@ -27,7 +27,7 @@
 					<div id='about-description'>
 						<div id="about-description-inner">
 							<p class="text-align-left">I love programming! Making cool websites, applications, and games is fun, and it's what I like to do.</p>
-							<p class="text-align-left">I'm currently in my final semester of computer science at the University of Lethbridge.</p>
+							<p class="text-align-left">This website serves as my personal portfolio. Below you can find projects, demos, and contact information.</p>
 						</div>
 					</div>
 				</div>
