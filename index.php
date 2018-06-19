@@ -276,26 +276,23 @@
 
 						<!-- Lethbridge College -->
 						<div class="card-outer equal-height">
-							<div class="card">
-								<div class="card-media no-zoom">
-									<img src="media/college-icon.png"></img>
-								</div>
-								<div class="card-title">Lethbridge College</div>
+							<div class="card button-white">
+								<!--<div class="card-title card-title-large">Lethbridge College</div>-->
+								<a href="https://lethbridgecollege.ca/" target="_blank"><div class="button button-blue">Lethbridge College</div></a>
 								<div class="card-description">
-									<p>Diploma in Computer Information Technology (2016)</p>
+									<div class="card-title card-title-small">Diploma in Computer Information Technology (2016)</div>
+									<p>The education was a good mix of theory and hands on work (including a practicum). We mostly worked with C++/Java to learn the fundamentals of programming, but also learned C, HTML, CSS, JS, and PHP.</p>
 								</div>
 							</div>
 						</div><!-- End Lethbridge College -->
 						
 						<!-- University of Lethbridge -->
 						<div class="card-outer equal-height">
-							<div class="card">
-								<div class="card-media no-zoom">
-									<img src="media/university-icon.png"></img>
-								</div>
-								<div class="card-title">University of Lethbridge</div>
+							<div class="card button-white">
+								<a href="https://www.uleth.ca/" target="_blank"><div class="button button-blue">University of Lethbridge</div></a>
 								<div class="card-description">
-									<p>Bachelor of Computer Science (2018)</p>
+									<div class="card-title card-title-small">Bachelor of Computer Science (2018)</div>
+									<p>Most of the programming was done in C++, but other languages such as assembly and lisp were used to learn more in-depth topics. </p>
 								</div>
 							</div>
 						</div><!-- End University of Lethbridge -->

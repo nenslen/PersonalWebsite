@@ -37,7 +37,7 @@ $link-color: #56A3DF;
 $card-base-color: gainsboro;
 $card-bg-color: lighten($card-base-color, 10%);
 $card-text-color: #111111;
-$card-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+$card-box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.7), 3px 0px 6px rgba(0, 0, 0, 0.7), -3px 0px 6px rgba(0, 0, 0, 0.7);
 $card-border-color: $card-base-color;
 $card-border-radius: 0;
 $card-spacing: 1.5em;
